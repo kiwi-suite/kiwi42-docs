@@ -22,8 +22,7 @@ To install the latest stable version:::
 Updating
 --------
 
-KM3Pipe comes with a command line utility called `km3pipe`, which can
-be used to update KM3Pipe itself::
+Update kiwi42::
 
     composer update
 
