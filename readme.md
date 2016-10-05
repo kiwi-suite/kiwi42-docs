@@ -7,7 +7,7 @@
 __Requirements__
 
     $ brew install python
-    $ pip install sphinx sphinx-autobuild
+    $ pip install sphinx sphinx-autobuild sphinx_rtd_theme
     
 __Generate Docs__    
     
