@@ -13,34 +13,65 @@ A `Zend Framework`_ based Content Management System for Developers.
 
 The main documentation for kiwi42 is organized into a couple sections:
 
-* :ref:`kiwi-docs`
-* :ref:`admin-docs`
+* :ref:`intro-docs`
+* :ref:`start-docs`
+* :ref:`build-docs`
 * :ref:`frontend-docs`
+* :ref:`modules-docs`
+* :ref:`extend-docs`
 
-.. _kiwi-docs:
+.. _intro-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Introduction
+
+   intro/concept.rst
+
+.. _start-docs:
 
 .. toctree::
    :maxdepth: 2
    :caption: Getting Started
 
-   kiwi/concept.rst
-   kiwi/install.rst
+   start/install.rst
+   start/fruit.rst
 
-.. _admin-docs:
+.. _build-docs:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Admin42
+   :caption: Components
 
-   admin/blocks.rst
-   admin/pages.rst
-   admin/extend.rst
+   components/project.rst
+   components/pages.rst
+   components/blocks.rst
+   components/forms.rst
 
 .. _frontend-docs:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Frontend42
+   :caption: Frontend Development
 
-   frontend/blocks.rst
-   frontend/pages.rst
+   frontend/start.rst
+
+.. _modules-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Official Modules
+
+   modules/calendar.rst
+   modules/frontend.rst
+   modules/links.rst
+   modules/media.rst
+   modules/translation.rst
+
+.. _extend-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Extend & Customize
+
+   extend/whitelabel.rst

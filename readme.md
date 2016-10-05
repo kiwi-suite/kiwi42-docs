@@ -1,6 +1,6 @@
 # kiwi42 Documentation
 
-[Read The Docs](http://kiwi42.readthedocs.io/en/latest/)
+View online on [Read The Docs](http://kiwi42.readthedocs.io/en/latest/)
 
 ## Generate Docs
 

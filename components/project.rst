@@ -1,2 +1,2 @@
-Extend admin42
+Project Module
 ==============

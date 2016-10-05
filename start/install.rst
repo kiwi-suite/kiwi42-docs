@@ -13,19 +13,9 @@ To install kiwi42, you need:
 Install
 -------
 
-
-To install the latest stable version:::
+To install the latest stable version::
 
     composer install
-
-
-Updating
---------
-
-Update kiwi42::
-
-    composer update
-
 
 Configuration
 -------------
@@ -36,5 +26,8 @@ Here is an example configuration::
 
     ...
 
+Update
+------
 
-test
+    composer update
+
