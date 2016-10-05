@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'kiwi42'
-copyright = '2016, Thomas Payer, Bernhard Efler, Lucas Seinfeld'
+copyright = '2016, raum42'
 author = 'Thomas Payer, Bernhard Efler, Lucas Seinfeld'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -120,7 +120,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+#html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
