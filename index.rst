@@ -13,14 +13,11 @@ A `Zend Framework`_ based Content Management System for Developers.
 
 The documentation is organized into following main sections:
 
-* :ref:`intro-docs`
-
-Get a basic understanding of what the idea behind kiwi42 is.
-
+* :ref:`intro-docs` Get a basic understanding of what the idea behind kiwi42 is.
 * :ref:`start-docs`
-* :ref:`build-docs`
+* :ref:`build-docs` Information on usage of core components.
 * :ref:`frontend-docs`
-* :ref:`modules-docs`
+* :ref:`modules-docs` raum42's official custom modules in detail
 * :ref:`extend-docs`
 
 
@@ -34,12 +31,9 @@ Get a basic understanding of what the idea behind kiwi42 is.
 
 .. _start-docs:
 
-Here's how to set it up and maintain it.
-
 .. toctree::
    :maxdepth: 2
    :caption: Getting Started
-
 
    start/install.rst
    start/configure.rst
@@ -47,8 +41,6 @@ Here's how to set it up and maintain it.
    start/fruit.rst
 
 .. _build-docs:
-
-Information on usage of core components.
 
 .. toctree::
    :maxdepth: 2
@@ -68,8 +60,6 @@ Information on usage of core components.
    frontend/start.rst
 
 .. _modules-docs:
-
-raum42's official custom modules in detail.
 
 .. toctree::
    :maxdepth: 2
