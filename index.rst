@@ -11,14 +11,18 @@ A `Zend Framework`_ based Content Management System for Developers.
 .. _raum42: https://raum42.at/
 .. _Zend Framework: https://framework.zend.com/
 
-The main documentation for kiwi42 is organized into a couple sections:
+The documentation is organized into following main sections:
 
 * :ref:`intro-docs`
+
+Get a basic understanding of what the idea behind kiwi42 is.
+
 * :ref:`start-docs`
 * :ref:`build-docs`
 * :ref:`frontend-docs`
 * :ref:`modules-docs`
 * :ref:`extend-docs`
+
 
 .. _intro-docs:
 
@@ -30,14 +34,21 @@ The main documentation for kiwi42 is organized into a couple sections:
 
 .. _start-docs:
 
+Here's how to set it up and maintain it.
+
 .. toctree::
    :maxdepth: 2
    :caption: Getting Started
 
+
    start/install.rst
+   start/configure.rst
+   start/upgrade.rst
    start/fruit.rst
 
 .. _build-docs:
+
+Information on usage of core components.
 
 .. toctree::
    :maxdepth: 2
@@ -58,13 +69,14 @@ The main documentation for kiwi42 is organized into a couple sections:
 
 .. _modules-docs:
 
+raum42's official custom modules in detail.
+
 .. toctree::
    :maxdepth: 2
    :caption: Official Modules
 
    modules/calendar.rst
    modules/frontend.rst
-   modules/links.rst
    modules/media.rst
    modules/translation.rst
 
