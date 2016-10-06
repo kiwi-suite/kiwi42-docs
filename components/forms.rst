@@ -278,14 +278,14 @@ This element is an shortcut of:
         ],
     ]
 
-Online
-~~~~~~
+OnlineSwitcher
+~~~~~~~~~~~~~~
 Short version of an online/offline switcher
 
 .. code-block:: php
 
     [
-        'type' => 'online', //required
+        'type' => 'onlineSwitcher', //required
         // ...
     ]
 
@@ -299,6 +299,26 @@ This element is an shortcut of:
         'uncheckedValue' => 'offline',
     ]
 
+ActiveSwitcher
+~~~~~~~~~~~~~~
+Short version of an online/offline switcher
+
+.. code-block:: php
+
+    [
+        'type' => 'activeSwitcher', //required
+        // ...
+    ]
+
+This element is an shortcut of:
+
+.. code-block:: php
+
+    [
+        'type' => 'switcher',
+        'checkedValue' => 'active',
+        'uncheckedValue' => 'inactive',
+    ]
 
 Image
 ~~~~~
