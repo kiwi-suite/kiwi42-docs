@@ -58,6 +58,8 @@ The documentation is organized into following main sections:
    :caption: Frontend Development
 
    frontend/start.rst
+   frontend/assets.rst
+   frontend/view_helpers.rst
 
 .. _modules-docs:
 
