@@ -15,6 +15,6 @@ Usage in your view script
     <?= $this-assetUrl('/css/style.min.css', 'application') ?>
 
 Both parameters are optional. The first parameter determines the url path to the file (weather relative from the asset
-url base or when a second parameter is given, relative from the base_url of the given config).
+url base or when a second parameter is given, relative from the ``target`` parameter).
 The second parameter declares the key of your asset directory config. See :doc:`/frontend/assets` for further information.
 

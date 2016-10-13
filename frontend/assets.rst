@@ -12,24 +12,22 @@ The default config of the asset system should look similar to this:
 .. code-block:: php
 
     [asset_url] => null
+    [asset_path] => null
     [prepend_commit] => false
+    [prepend_base_path] => true
     [directories] =>
         [admin42] =>
-            [target] => 'public/assets/admin/admin42'
+            [target] => 'admin/admin42'
             [source] => 'vendor/fruit42/admin42/assets/dist/'
-            [base_url] => '/assets/admin/admin42'
         [media42] =>
-            [target] => 'public/assets/admin/media42'
+            [target] => 'admin/media42'
             [source] => 'vendor/fruit42/media42/assets/dist/'
-            [base_url] => '/assets/admin/media42'
         [frontend42] =>
-            [target] => 'public/assets/admin/frontend42'
+            [target] => 'admin/frontend42'
             [source] => 'vendor/fruit42/frontend42/assets/dist/'
-            [base_url] => '/assets/admin/frontend42'
         [application] =>
-            [target] => 'public/assets/application'
+            [target] => 'application'
             [source] => 'module/application/assets/dist/'
-            [base_url] => '/assets/application'
 
 .. tip:: With ``./bin/fruit config assets`` you can check your local asset config
 
@@ -40,22 +38,6 @@ Directories is a config list of target sources which will be symlinked/copied to
 
     ./bin/fruit config assets
 
-Additional you can register a base_url per directory which can be used by the assetUrl :doc:`/frontend/view_helpers`.
-
-Asset Url
-~~~~~~~~~
-Perhaps you want to deliver your assets from a different host like a static host or CDN. The ``asset_url`` provides the
-possibility to append a string to assets url like
-
-.. code-block:: php
-
-    [
-        'assets' => [
-            'asset_url' => '//static.yourhost.com'
-        ]
-    ]
-
-Per default ``asset_url`` is null. In this case the basePath of the project will be used.
 
 Prepend Commit
 ~~~~~~~~~~~~~~
@@ -65,8 +47,60 @@ will be used.
 
 .. note:: The hash will be created on ``composer update`` or ``composer install``. Therfor you don't need a working git on your production server
 
-For example an url which looks like this will transformed to::
-
-    /assets/application/css/style.min.css => /v-6ef45ed/assets/application/css/style.min.css
-
 .. note:: You may have to adopt your rewrite rules on your server
+
+Examples
+~~~~~~~~
+Assume your project is running under ``www.your-project.local/app/``.
+
+With this config:
+
+.. code-block:: php
+
+    [asset_url] => null
+    [asset_path] => '/assets'
+    [prepend_commit] => false
+    [prepend_base_path] => true
+    [directories] =>
+        [admin42] =>
+            [target] => 'admin/admin42'
+            [source] => 'vendor/fruit42/admin42/assets/dist/'
+
+When ``/css/styles.min.css`` from namespace ``admin42`` is request::
+
+    /app/assets/admin/admin42/css/styles.min.css
+
+With this config:
+
+.. code-block:: php
+
+    [asset_url] => null
+    [asset_path] => '/assets'
+    [prepend_commit] => true
+    [prepend_base_path] => true
+    [directories] =>
+        [admin42] =>
+            [target] => 'admin/admin42'
+            [source] => 'vendor/fruit42/admin42/assets/dist/'
+
+When ``/css/styles.min.css`` from namespace ``admin42`` is request::
+
+    /app/assets/v-54fah56/admin/admin42/css/styles.min.css
+
+With this config:
+
+.. code-block:: php
+
+    [asset_url] => 'https://static.your-project.com/'
+    [asset_path] => '/assets'
+    [prepend_commit] => true
+    [prepend_base_path] => true
+    [directories] =>
+        [admin42] =>
+            [target] => 'admin/admin42'
+            [source] => 'vendor/fruit42/admin42/assets/dist/'
+
+When ``/css/styles.min.css`` from namespace ``admin42`` is request::
+
+    https://static.your-project.com/app/assets/v-54fah56/admin/admin42/css/styles.min.css
+
