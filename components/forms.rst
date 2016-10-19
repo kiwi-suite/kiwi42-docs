@@ -27,46 +27,6 @@ might have extra configuration parameters which is covered later):
         'description' => '', //optional
     ]
 
-Text
-~~~~
-
-Renders a ``<input type="text">`` element with an attached strlen validator
-
-.. code-block:: php
-
-    [
-        'type' => 'text', //required
-        'minLength' => 0, //optional, default 0
-        'maxLength' => 0, //optional, default 524288
-        // ...
-    ]
-
-Textarea
-~~~~~~~~
-
-Renders a ``<textarea>`` element with an attached strlen validator
-
-.. code-block:: php
-
-    [
-        'type' => 'textarea', //required
-        'minLength' => 0, //optional, default 0
-        'maxLength' => 0, //optional, default PHP_MAX_INT
-        'rows' => 0, //optional, default 5
-        // ...
-    ]
-
-Email
-~~~~~
-Renders a ``<input type="text">`` element with an attached email validator
-
-.. code-block:: php
-
-    [
-        'type' => 'email', //required
-        // ...
-    ]
-
 Checkbox
 ~~~~~~~~
 
@@ -76,19 +36,6 @@ Renders a single ``<input type="checkbox">`` element
 
     [
         'type' => 'checkbox', //required
-        'checkedValue' => '', //optional, default string 'true'
-        'uncheckedValue' => '', //optional, default string 'false'
-        // ...
-    ]
-
-Switcher
-~~~~~~~~
-Switcher is a visual component (an On/Off-Switch). Internally in works like the checkbox element.
-
-.. code-block:: php
-
-    [
-        'type' => 'switcher', //required
         'checkedValue' => '', //optional, default string 'true'
         'uncheckedValue' => '', //optional, default string 'false'
         // ...
@@ -108,17 +55,6 @@ this element should be used in every form.
             'salt' => '', //optional
             'timeout' => 0, //optional, default 300 seconds
         ],
-        // ...
-    ]
-
-Hidden
-~~~~~~
-Renders a ``<input type="hidden">`` element
-
-.. code-block:: php
-
-    [
-        'type' => 'hidden', //required
         // ...
     ]
 
@@ -144,11 +80,46 @@ This generates a date and time picker element with an attached date time validat
         // ...
     ]
 
+Email
+~~~~~
+Renders a ``<input type="text">`` element with an attached email validator
+
+.. code-block:: php
+
+    [
+        'type' => 'email', //required
+        // ...
+    ]
+
 Fieldset
 ~~~~~~~~
 
+Hidden
+~~~~~~
+Renders a ``<input type="hidden">`` element
+
+.. code-block:: php
+
+    [
+        'type' => 'hidden', //required
+        // ...
+    ]
+
 Link
 ~~~~
+
+Media
+~~~~~
+Through the media element media files can be selected/uploaded.
+
+.. code-block:: php
+
+    [
+        'type' => 'media', //required
+        'categorySelection' => '', //optional - select only from given category, default: *
+        'typeSelection' => '' //optional - select only given type. possible values are *, images or pdf. default: *
+        // ...
+    ]
 
 MultiCheckbox
 ~~~~~~~~~~~~~
@@ -210,6 +181,48 @@ Renders a ``<select>`` element  with an attached inArray validator
 Stack
 ~~~~~
 
+Switcher
+~~~~~~~~
+Switcher is a visual component (an On/Off-Switch). Internally in works like the checkbox element.
+
+.. code-block:: php
+
+    [
+        'type' => 'switcher', //required
+        'checkedValue' => '', //optional, default string 'true'
+        'uncheckedValue' => '', //optional, default string 'false'
+        // ...
+    ]
+
+Text
+~~~~
+
+Renders a ``<input type="text">`` element with an attached strlen validator
+
+.. code-block:: php
+
+    [
+        'type' => 'text', //required
+        'minLength' => 0, //optional, default 0
+        'maxLength' => 0, //optional, default 524288
+        // ...
+    ]
+
+Textarea
+~~~~~~~~
+
+Renders a ``<textarea>`` element with an attached strlen validator
+
+.. code-block:: php
+
+    [
+        'type' => 'textarea', //required
+        'minLength' => 0, //optional, default 0
+        'maxLength' => 0, //optional, default PHP_MAX_INT
+        'rows' => 0, //optional, default 5
+        // ...
+    ]
+
 Wysiwyg
 ~~~~~~~
 Renders a ``tinymce`` wysiwyg editor
@@ -233,23 +246,31 @@ The YouTube Element provides the functionality to parse youtube links and storin
         // ...
     ]
 
-Media
-~~~~~
-Through the media element media files can be selected/uploaded.
-
-.. code-block:: php
-
-    [
-        'type' => 'media', //required
-        'categorySelection' => '', //optional - select only from given category, default: *
-        'typeSelection' => '' //optional - select only given type. possible values are *, images or pdf. default: *
-        // ...
-    ]
-
 PreConfigured Elements
 ----------------------
 
 PreConfigured Elements are based on Base Elements but have already values and/or options pre configured
+
+ActiveSwitcher
+~~~~~~~~~~~~~~
+Short version of an online/offline switcher
+
+.. code-block:: php
+
+    [
+        'type' => 'activeSwitcher', //required
+        // ...
+    ]
+
+This element is an shortcut of:
+
+.. code-block:: php
+
+    [
+        'type' => 'switcher',
+        'checkedValue' => 'active',
+        'uncheckedValue' => 'inactive',
+    ]
 
 Country
 ~~~~~~~
@@ -278,48 +299,6 @@ This element is an shortcut of:
         ],
     ]
 
-OnlineSwitcher
-~~~~~~~~~~~~~~
-Short version of an online/offline switcher
-
-.. code-block:: php
-
-    [
-        'type' => 'onlineSwitcher', //required
-        // ...
-    ]
-
-This element is an shortcut of:
-
-.. code-block:: php
-
-    [
-        'type' => 'switcher',
-        'checkedValue' => 'online',
-        'uncheckedValue' => 'offline',
-    ]
-
-ActiveSwitcher
-~~~~~~~~~~~~~~
-Short version of an online/offline switcher
-
-.. code-block:: php
-
-    [
-        'type' => 'activeSwitcher', //required
-        // ...
-    ]
-
-This element is an shortcut of:
-
-.. code-block:: php
-
-    [
-        'type' => 'switcher',
-        'checkedValue' => 'active',
-        'uncheckedValue' => 'inactive',
-    ]
-
 Image
 ~~~~~
 Through the image element images can be selected/uploaded.
@@ -341,3 +320,23 @@ This element is an shortcut of:
         'typeSelection' => 'images',
     ]
 
+OnlineSwitcher
+~~~~~~~~~~~~~~
+Short version of an online/offline switcher
+
+.. code-block:: php
+
+    [
+        'type' => 'onlineSwitcher', //required
+        // ...
+    ]
+
+This element is an shortcut of:
+
+.. code-block:: php
+
+    [
+        'type' => 'switcher',
+        'checkedValue' => 'online',
+        'uncheckedValue' => 'offline',
+    ]

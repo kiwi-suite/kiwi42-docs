@@ -57,20 +57,8 @@ The documentation is organized into following main sections:
    :maxdepth: 2
    :caption: Frontend Development
 
-   frontend/start.rst
    frontend/assets.rst
    frontend/view_helpers.rst
-
-.. _modules-docs:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Official Modules
-
-   modules/calendar.rst
-   modules/frontend.rst
-   modules/media.rst
-   modules/translation.rst
 
 .. _extend-docs:
 

@@ -55,19 +55,20 @@ However specific parts and tasks have been replaced by more specialized librarie
 
 Take a look at the latest `composer.json`_ file to get a sense of how the stack is composed.
 
-raum42 provides its own set of modules as an application foundation and are declared as dependencies of kiwi42. Three main modules take care of abstracting and enhancing ZF to fit kiwi42's needs from "end to end":
+raum42 provides its own set of modules as an application foundation and are declared as dependencies of kiwi42. These modules take care of abstracting and enhancing ZF to fit kiwi42's needs from "end to end".
 
 **core42**
 
-*TK*
+Provides the Application Framework Layer. It includes the fruit console and base classes for abstracting and extending the Zend Framework.
 
 **admin42**
 
-*TK*
+Includes the main components of the administration area.
 
 **frontend42**
 
-*TK*
+Provides content related features for admin42, houses the core sitemap features and makes them accessible for view templates.
+It manages and processes page types and blocks and their configuration.
 
 
 .. _Zend Framework: https://framework.zend.com/
