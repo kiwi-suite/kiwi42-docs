@@ -40,7 +40,7 @@ Serve
 
 To run your kiwi42 project set up your local development server accordingly (virtual hosts) and point them to the ``public`` directory.
 
-.. tip:: kiwi42 ships with ZF skeleton's `Vagrantfile`_ and `Dockerfile`_. Feel free to use these if you want to virtualize your development environment. Refer to the respective documentations for installation and setup.
+.. tip:: The `Zend Framework Skeleton Application`_ ships with both `Vagrantfile`_ and `Dockerfile`_. Feel free to use these if you want to virtualize your development environment. Refer to the respective documentations for installation and setup.
 
 
 Now configure the application to your needs which will be explained in general in the following :doc:`/start/configure` section and in detail wherever relevant.
@@ -48,3 +48,4 @@ Now configure the application to your needs which will be explained in general i
 .. _Composer: https://getcomposer.org/
 .. _Vagrantfile: https://github.com/raum42/kiwi42/blob/master/Vagrantfile
 .. _Dockerfile: https://github.com/raum42/kiwi42/blob/master/Dockerfile
+.. _Zend Framework Skeleton Application: https://github.com/zendframework/ZendSkeletonApplication
