@@ -14,11 +14,10 @@ A `Zend Framework`_ based Content Management System for Developers.
 The documentation is organized into following main sections:
 
 * :ref:`intro-docs` Get a basic understanding of what the idea behind kiwi42 is.
-* :ref:`start-docs`
+* :ref:`start-docs` How to setup a kiwi42 project.
 * :ref:`build-docs` Information on usage of core components.
-* :ref:`frontend-docs`
-* :ref:`modules-docs` raum42's official custom modules in detail
-* :ref:`extend-docs`
+* :ref:`frontend-docs` How to build and integrate assets and output site contents.
+* :ref:`extend-docs` Whitelabeling.
 
 
 .. _intro-docs:
