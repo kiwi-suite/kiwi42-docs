@@ -3,7 +3,7 @@ Configuration
 
 The configuration files for a kiwi42 project can be found in ``config/autoload/``. They're prefixed with ``local.`` and therefore auto loaded and git ignored by default.
 
-After a basic setup with fruit console there should be come separated configuration files (assets, database, ...) but they may be combined into a single ``local.config.php`` as well.
+After a basic setup with fruit console there should be some separated configuration files (assets, database, ...) but they may be combined into a single ``local.config.php`` as well.
 
 Configuration values and options will be explained in detail where they are relevant within this documentation.
 

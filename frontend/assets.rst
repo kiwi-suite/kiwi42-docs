@@ -45,14 +45,14 @@ To avoid browser caching issues you can enable ``prepend_commit`` which will pre
 the asset url. Per default the short version of your git commit hash will be used. If git is unavailable a random hash
 will be used instead.
 
-.. note:: The hash will be created when running ``composer update`` or ``composer install``. Therefor it is not needed to have git installed on the production servers.
+.. note:: The hash will be created when running ``composer update`` or ``composer install``. Therefore it is not needed to have git installed on the production servers.
 
 .. note:: You may have to adopt your rewrite rules on your server.
 
 Examples
 ~~~~~~~~
 
-See :doc:`/frontend/view_helpers` to see how add URLs to assets in views.
+See :doc:`/frontend/view_helpers` to see how to add URLs to assets in views.
 
 The following asset URLs will be generated depending on the assets configuration.
 
