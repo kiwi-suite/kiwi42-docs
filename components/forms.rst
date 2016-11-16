@@ -180,6 +180,41 @@ Renders a ``<select>`` element  with an attached inArray validator
 
 Stack
 ~~~~~
+Renders a repeatable stack of form elements
+
+.. code-block:: php
+
+    [
+        'type' => 'stack', //required
+        'sets' => [
+            [
+                    'name' => 'fieldset1',
+                    'label' => 'Fieldset1',
+                    'elements' => [
+                        [
+                            'name' => 'text',
+                            'type' => 'text',
+                        ],
+                        [
+                            'name' => 'image',
+                            'type' => 'image',
+                        ],
+                    ]
+                ],
+                [
+                    'name' => 'fieldset2',
+                    'label' => 'Fieldset2',
+                    'elements' => [
+                        [
+                            'name' => 'wysiwyg',
+                            'type' => 'wysiwyg',
+                        ],
+                    ]
+                ]
+        ], //required
+        // ...
+    ]
+
 
 Switcher
 ~~~~~~~~
