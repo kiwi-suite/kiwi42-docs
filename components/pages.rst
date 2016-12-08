@@ -37,5 +37,6 @@ An Example configuration:
         'defaults'      => [
             //See FormElements for more Information
         ],
-    ]
+        'layout'        => '', //the layout which sould be rendered. Defaul "layout/layout"
+]
 
