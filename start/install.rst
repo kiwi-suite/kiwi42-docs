@@ -24,13 +24,13 @@ Now run the setup command provided by kiwi42's own :doc:`/start/fruit` which wil
 
     $ bin/fruit setup
 
-This will turn on development mode, run database migrations and symlink/copy the assets folders given by the credentials you provided. The resulting configuration can be found in the ``config/autoload`` directory.
+This will among other things turn on development mode, run database migrations and symlink/copy the assets folders given by the credentials you provided. The resulting configuration can be found in the ``config/autoload`` directory.
 
 **Permissions**
 
 Set write permissions/ownership to the ``data`` folder recursively for the user that will run the application.
 
-.. note:: **For Windows users:** the ``assets`` command tries to **symlink** folders from modules' ``assets`` folders to the ``public`` folder. Use the command's additional ``--copy`` option to copy files instead::
+.. note:: **For Windows users:** the ``assets`` command tries to **symlink** folders from modules' ``assets`` folders to the ``public`` folder. This is possible on Windows 7 and newer and requires to be run with administrative permissions. Otherwise use the command's additional ``--copy`` option to copy files instead::
 
     $ bin/fruit assets --copy
 

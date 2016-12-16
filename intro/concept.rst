@@ -33,6 +33,11 @@ Directory Structure
 kiwi42 lends its directory structure from the `ZF Skeleton application for zend-mvc projects`_.
 Only a few structural requirements have to be fulfilled within custom modules to work with kiwi42 which will be mentioned and highlighted wherever applicable within this documentation. Apart from these kiwi42 does not dictate how developers should set up their application to maintain an optimal workflow - *especially* when it comes to the front end. Have it your way.
 
+To be as flexible as possible when it comes to different deployment methods and server setups kiwi42 tries to introduce some best practices.
+
+- The `data` folder in the project root is ignored by default. This allows it to be moved to a shared location much easier when e.g. using Capistrano's releases and causes no permission conflicts by being included in the repository.
+- The same applies to assets in general as they might not be served from the same `public` folder but a "static" CDN host instead. Assets' folders within modules are linked to the `resources` root folder from where a link is added to the `public` folder but may be moved somewhere else easily.
+
 
 User Interface
 --------------
