@@ -6,7 +6,7 @@ Requirements
 
 To install kiwi42, you will need:
 
-- PHP 5.6/7.0+
+- PHP 5.6/7.0+ with intl extension
 - MySQL or equivalent
 - `Composer`_
 
