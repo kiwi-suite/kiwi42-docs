@@ -5,6 +5,15 @@ For (nearly) every website or web application you will need some kind of assets 
 The kiwi asset system is helping to symlink/copy assets to the right place (inside a modular directory
 structure) and provides a helper to generate urls to selected assets.
 
+Do symlink/copy your assets just run::
+
+    ./bin/fruit assets
+
+
+.. note:: **For Windows users:** the ``assets`` command tries to **symlink** folders from modules' ``assets`` folders. This is possible on Windows 7 and newer and requires to be run with administrative permissions. Otherwise use the command's additional ``--copy`` option to copy files instead::
+
+    $ bin/fruit assets --copy
+
 .. note:: The asset system doesn't provide any functionality for compressing/compiling of assets but helps to locate asset folders and copy/symlink them. What kind of frontend setup (grunt, gulp, sass, less etc) you are using is completely up to you (and also your responsibility to setup correctly.
 
 The default config of the asset system should look similar to this:

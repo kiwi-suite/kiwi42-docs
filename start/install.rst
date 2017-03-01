@@ -7,9 +7,15 @@ Requirements
 To install kiwi42, you will need:
 
 - PHP 5.6/7.0+
-- MySQL or equivalent
+- php-intl extension
+- php-fileinfo extension
+- php-mbstring extension
+- php-pdo extension with mysql support
+- php-imagick extension (suggested)
+- MySQL >=5.6 or equivalent
 - `Composer`_
 
+Moreover php-cli should be available.
 
 Install
 -------
@@ -29,10 +35,6 @@ This will among other things turn on development mode, run database migrations a
 **Permissions**
 
 Set write permissions/ownership to the ``data`` folder recursively for the user that will run the application.
-
-.. note:: **For Windows users:** the ``assets`` command tries to **symlink** folders from modules' ``assets`` folders to the ``public`` folder. This is possible on Windows 7 and newer and requires to be run with administrative permissions. Otherwise use the command's additional ``--copy`` option to copy files instead::
-
-    $ bin/fruit assets --copy
 
 
 Serve
