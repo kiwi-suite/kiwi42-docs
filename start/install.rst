@@ -6,7 +6,6 @@ Requirements
 
 To install kiwi42, you will need:
 
-<<<<<<< HEAD
 - PHP 5.6/7.0+
 - php-intl extension
 - php-fileinfo extension
